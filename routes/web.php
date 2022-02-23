@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo "Sealamat Datang";
 });
+
+Route::get('/about', function () {
+    echo "2041720094, Safira Dyah Satiti, TI-2D";
+});
+
+Route::get('/articles/{id}', function ($id) {
+    echo "Halaman Artikel dengan ID {id}";
+});
+
+Route::get('/articles/{id}', function ($id) {
+    echo "Ini merupakan halaman artikel dengan id $id";
+});
+
+
